@@ -1,0 +1,13 @@
+#restaurant-logo{
+    float: left;
+}
+
+#restaurant-name{
+    font-size: 30px;
+}
+
+@media screen and (max-width: 720px) {
+    #restaurant-name{
+        display: none;
+    }
+}

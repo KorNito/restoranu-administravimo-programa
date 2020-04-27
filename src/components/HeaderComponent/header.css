@@ -1,0 +1,11 @@
+header{
+    background-color: white;
+    box-shadow: 3px 3px 3px grey;
+    margin-bottom: 25px;
+}
+
+@media screen and (max-width: 450px) {
+    header{
+        box-shadow: none;
+    }
+}
