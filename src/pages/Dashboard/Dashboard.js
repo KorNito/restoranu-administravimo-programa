@@ -7,7 +7,7 @@ import Header from '../../components/HeaderComponent/header';
 import Section from '../../components/SectionComponent/section';
 import Footer from '../../components/FooterComponent/footer'
 
-
+import './Dashboard.css'
 
 export class Dashboard extends Component {
     render() {

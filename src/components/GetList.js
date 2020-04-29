@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 
 import axios from 'axios'
 
-import './GetList.css';
-
 const jwt = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJydXRhQGV4YW1wbGUuZXhhbXBsZSIsImV4cCI6MTU4NzUyODA1OCwiaWF0IjoxNTg3NDkyMDU4fQ.pfv_WJOe2hRfgQjecV4ZKTR5tk-l-3vqggNZSpy4NDE";
 
 class GetList extends Component {

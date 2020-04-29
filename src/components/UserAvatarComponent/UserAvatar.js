@@ -4,7 +4,7 @@ import './UserAvatar.css';
 
 export default class UserAvatar extends Component {
     state = {
-        name: 'Test Usernam',
+        name: 'Test Username',
         status: false,
     }
 
@@ -20,11 +20,7 @@ export default class UserAvatar extends Component {
 
     render() {
         return (
-            <div>
-                <form>
-                    <label></label>
-                    <input type="text" id="main-search" name="main-search"/>
-                </form>    
+            <div>  
                 <img id="user-image" data-testid="user-avatar-image" src="https://image.flaticon.com/icons/svg/72/72905.svg" alt="Avatar logo" onClick={this.toggle}/>
                 <h2 id="username" data-testid="user-avatar-username">{this.state.name}</h2>
                 
