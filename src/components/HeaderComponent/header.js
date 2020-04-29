@@ -6,9 +6,10 @@ import RestaurantLogo from '../RestaurantLogoComponent/RestaurantLogo';
 import './header.css';
 
 class Header extends Component {
+
   render() {
     return (
-      <header data-testid="header">
+      <header className='header-component' data-testid="header">
         <RestaurantLogo id="restaurant-logo"/>
         <UserAvatar id="user-avatar"/>
       </header>

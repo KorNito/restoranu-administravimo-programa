@@ -2,11 +2,9 @@ import React, { Component } from 'react'
 
 import axios from 'axios';
 
-const jwt = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJydXRhQGV4YW1wbGUuZXhhbXBsZSIsImV4cCI6MTU4NzY4MjM2NCwiaWF0IjoxNTg3NjQ2MzY0fQ.tGaphoywrvnnfYgJn5amjWVhmA_Wfy2Zq_3XZMlVtak";
+const jwt = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJydXRhQGV4YW1wbGUuZXhhbXBsZSIsImV4cCI6MTU4ODIyOTk5NiwiaWF0IjoxNTg4MTkzOTk2fQ.aQbqq6hqaeMhmYvkfv8PpnUMnfdR6ufnswLIhscpBZU";
 
 export class restaurantList extends Component {
-
-
     constructor(props) {
         super(props)
     
@@ -14,6 +12,7 @@ export class restaurantList extends Component {
             posts: []     
         }
     }
+    
 
   componentDidMount(){
     axios({
@@ -34,11 +33,12 @@ export class restaurantList extends Component {
       });
   }
 
+
     render() {
         const {posts} = this.state
         return (
-            <div id="test">
-                <div className="restaurant-list">
+            <div className="restaurant-list">
+            
             <input type="search" id="restaurant-search" name="restaurant_search" placeholder="Search"/>
           <ul>
           {
@@ -47,7 +47,7 @@ export class restaurantList extends Component {
             null
           }
           </ul>
-        </div>
+        
         
             </div>
         )

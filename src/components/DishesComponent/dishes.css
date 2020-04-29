@@ -1,0 +1,16 @@
+.restaurant-dishes{
+    margin-top: 10px;
+    width: 80px;
+    margin-right: 35px;
+}
+
+#dishes-name{
+    font-size: x-large;
+    text-align: center;
+}
+
+#dishes_photo{
+    width: 100px;
+    height: 100px;
+    margin-left: 5px;
+}

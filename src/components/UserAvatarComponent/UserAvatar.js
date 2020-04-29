@@ -3,16 +3,25 @@ import React, { Component } from 'react'
 import './UserAvatar.css';
 
 export default class UserAvatar extends Component {
-    state = {
-        name: 'Test Username',
-        status: false,
+
+    constructor(props) {
+        super(props)
+    
+        this.state = {
+            posts: [],
+            name: 'Test Username',
+            status: false,     
+        }
     }
+
+    
 
     toggle = () => {
         this.setState({
             status: !this.state.status
         })
     }
+
     
     logout = () => {
         window.open('./src/pages/LoginPage.js');

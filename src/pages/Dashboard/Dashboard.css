@@ -3,11 +3,6 @@
     
 }
 
-.HeaderClass{
-    grid-column: 1 / 4;
-    grid-row: 1;
-}
-
 .RestaurantListClass{
     grid-column: 1;
     grid-row: 2;
@@ -73,21 +68,6 @@
     text-align: center;
 }
 
-#dish-name{
-    border-bottom: solid;
-    margin-top: 5px;
-}
-
-#dishes_photo{
-    width: 100%;
-    height: auto;
-}
-
-.discount-applicator{
-    background-color: #ffffff;
-    border: solid;
-}
-
 #submitDiscountButton{
     border-style: none;
     color: #fff;
@@ -103,24 +83,6 @@
     border-radius: 0rem .25rem .25rem 0rem;
     margin: 5px;
 
-}
-
-#chang_dis, #discountAmount{
-    margin-left: 25px;
-}
-#chang_dis{
-    margin-top: 20px;
-    margin-bottom: 12px;
-}
-
-#discountAmount{
-    border: 1px solid #e3eaef;
-    color: #1b1d1f;
-    background-color: #fff;
-    opacity: 1;
-    padding-top: 6.65px;
-    padding-bottom: 6.0px;
-    width: 70px;
 }
 
 /* @media screen and (max-width: 800px) {

@@ -1,7 +1,8 @@
-header{
+.header-component{
     background-color: white;
-    box-shadow: 3px 3px 3px grey;
-    margin-bottom: 25px;
+    border: solid;
+    height: 200px;
+    margin-bottom: 20px;
 }
 
 #restaurant-logo{
