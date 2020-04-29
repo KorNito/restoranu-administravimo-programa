@@ -1,0 +1,13 @@
+.restaurant-list{
+    background-color: #ffffff;
+    border: solid;
+}
+
+.restaurant-list li{
+    margin: 5px;
+}
+
+#test{
+    grid-column: 1;
+    grid-row: 2;
+}
