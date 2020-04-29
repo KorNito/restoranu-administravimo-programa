@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
 
-import {
-    BrowserRouter as Router,
-    Switch,
+import { 
+    BrowserRouter,
     Route,
-    Link
-} from "react-router-dom";
+    Switch
+} from 'react-router-dom'
+
+import {Dashboard} from '../Dashboard/Dashboard'
 
 import './LoginPage.css'
 
@@ -51,9 +52,6 @@ export class LoginPage extends Component {
             localStorage.setItem('jwt', token);
             console.log(token);
 
-            this.setAuthorizationToken(token);
-
-            window.location.href = 'src\components\SectionComponent\section.js';
         })
         .catch(error => {
             console.log(error)
