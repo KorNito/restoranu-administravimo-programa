@@ -73,6 +73,41 @@ section{
     grid-row: 2;
 }
 
+#submitDiscountButton{
+    border-style: none;
+    color: #fff;
+    background-color: #ee0d0d;
+    border-color: #ee0d0d;
+    box-shadow: 0 2px 6px 0 rgba(114,124,245,.5);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0rem .25rem .25rem 0rem;
+    margin: 5px;
+
+}
+
+#chang_dis, #discountAmount{
+    margin-left: 25px;
+}
+#chang_dis{
+    margin-top: 20px;
+    margin-bottom: 12px;
+}
+
+#discountAmount{
+    border: 1px solid #e3eaef;
+    color: #1b1d1f;
+    background-color: #fff;
+    opacity: 1;
+    padding-top: 6.65px;
+    padding-bottom: 6.0px;
+    width: 70px;
+}
+
 @media screen and (max-width: 800px) {
     .restaurant-list {
         grid-row: 1;

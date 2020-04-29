@@ -113,12 +113,11 @@ const jwt = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJydXRhQGV4YW1wbGUuZXhhbXBsZSIsImV4cC
      
     </section> 
         <div className="discount-applicator">
-          <h2>Change discount:</h2>
-          <input id="discountAmount" type="number" placeholder="new discount" min="1" max="100"/>
+          <h2 id="chang_dis">Change price:</h2>
+          <input id="discountAmount" type="text" placeholder=" New price"/>
           <button id="submitDiscountButton" type="submit" value="submit" onClick={()=>{ alert('Discount was applied'); }}>Submit</button>
         </div>
-  
-        </section>
+      </section>
       )
   }
 }
