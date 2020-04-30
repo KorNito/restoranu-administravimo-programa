@@ -1,3 +1,8 @@
+.dishes-component{
+    grid-column: 1 / 3;
+    grid-row: 3;  
+}
+
 .restaurant-dishes{
     margin-top: 10px;
     width: 80px;

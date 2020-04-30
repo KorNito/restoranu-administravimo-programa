@@ -1,20 +1,40 @@
 import React, { Component } from 'react'
 
+import axios from 'axios'
+
 import './UserAvatar.css';
 
-export default class UserAvatar extends Component {
+const jwt = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJydXRhQGV4YW1wbGUuZXhhbXBsZSIsImV4cCI6MTU4ODIyOTk5NiwiaWF0IjoxNTg4MTkzOTk2fQ.aQbqq6hqaeMhmYvkfv8PpnUMnfdR6ufnswLIhscpBZU";
+
+export class UserAvatar extends Component {
 
     constructor(props) {
         super(props)
     
         this.state = {
             posts: [],
-            name: 'Test Username',
-            status: false,     
+            status: false     
         }
     }
 
-    
+    componentDidMount(){
+        axios({
+          url: 'https://protected-brook-06093.herokuapp.com/getUserData',
+          method: 'get',
+          headers: {
+            'Authorization': `Bearer ` + jwt,
+            'Content-Type': 'application/json',
+            'Access-Control-Allow-Origin': '*'
+          }  
+        })
+          .then(response => {
+            console.log(response)
+            this.setState({posts: response.data})
+          }) 
+          .catch(error => {
+            console.log(error);
+          });
+    }
 
     toggle = () => {
         this.setState({
@@ -22,16 +42,20 @@ export default class UserAvatar extends Component {
         })
     }
 
-    
     logout = () => {
         window.open('./src/pages/LoginPage.js');
     }
 
     render() {
+        const {posts} = this.state
         return (
-            <div>  
+            <div>
                 <img id="user-image" data-testid="user-avatar-image" src="https://image.flaticon.com/icons/svg/72/72905.svg" alt="Avatar logo" onClick={this.toggle}/>
-                <h2 id="username" data-testid="user-avatar-username">{this.state.name}</h2>
+                {
+                    posts.length ?
+                    posts.map(post => <h2 id="username" data-testid="user-avatar-username">Welcome, {post.name}</h2>) :
+                    null
+                }
                 
                 {this.state.status &&
                 <div id="settings-menu">
@@ -44,3 +68,5 @@ export default class UserAvatar extends Component {
         )
     }
 }
+
+export default UserAvatar

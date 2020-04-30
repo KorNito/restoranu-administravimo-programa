@@ -1,16 +1,27 @@
-/* #restaurant-logo{
-    position: static;
+.restaurant-logo-component{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#restaurant-logo{
+    height: auto;
+    width: 100px;
 }
 
 #restaurant-name{
-    font-size: 30px;
-    position: static;
-    left: 200px;
-    top: -80px;
+    font-size: 3.8em;
+    margin: auto;
 }
 
 @media screen and (max-width: 720px) {
     #restaurant-name{
         display: none;
     }
-} */
+}
+
+@media screen and (max-width: 1000px) {
+    #restaurant-name{
+        margin-left: 20px;
+    }
+}

@@ -12,13 +12,13 @@ export class RestaurantLogo extends Component {
         super(props)
     
         this.state = {
-            posts: [] 
+            posts: []
         }
     }
 
     componentDidMount(){
         axios({
-          url: 'https://protected-brook-06093.herokuapp.com/addresses',
+          url: 'https://protected-brook-06093.herokuapp.com/getHeaderData',
           method: 'get',
           headers: {
             'Authorization': `Bearer ` + jwt,
@@ -38,14 +38,17 @@ export class RestaurantLogo extends Component {
     render() {
         const {posts} = this.state
         return (
-            <div id="restaurant-logo-component">
-                {
-                    posts.length ?
-                    posts.map(post => <li key={post.id}>{post.address}</li>) :
-                    null
-                }
-                <hi>test</hi>    
-            </div>
+          <div >
+          {
+            posts.length ?
+            posts.map(post => 
+              <div className="restaurant-logo-component">
+                <img id="restaurant-logo" src={post.logo_url}/>
+                <p id="restaurant-name" key={post.id}>{post.addressOrChain}</p>
+              </div>) : 
+            null
+          }      
+          </div>
         )
     }
 }

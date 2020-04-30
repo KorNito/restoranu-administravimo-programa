@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import './months.css'
+
 export class months extends Component {
     render() {
         return (

@@ -1,10 +1,15 @@
 .restaurant-list{
     background-color: #ffffff;
     border: solid;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    grid-column: 1;
+    grid-row: 2;
+}
+
+#restaurant-search{
+    margin: 10px;
 }
 
 .restaurant-list li{
-    margin: 5px;
+    margin: 10px;
+    list-style: none;
 }

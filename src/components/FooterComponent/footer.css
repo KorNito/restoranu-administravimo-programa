@@ -6,4 +6,7 @@ footer{
     color: black;
     text-align: center;
     margin-top: 10px;
+    grid-column: 1 / 4;
+    grid-row: 4;
+    border: solid;
 }

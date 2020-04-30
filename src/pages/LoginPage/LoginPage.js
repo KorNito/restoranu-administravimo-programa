@@ -52,6 +52,7 @@ export class LoginPage extends Component {
             localStorage.setItem('jwt', token);
             console.log(token);
 
+            
         })
         .catch(error => {
             console.log(error)

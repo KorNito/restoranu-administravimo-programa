@@ -1,8 +1,8 @@
 .discount-applicator{
     background-color: #ffffff;
     border: solid;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    grid-column: 3;
+    grid-row: 3;
 }
 
 #discount-applicator-title{

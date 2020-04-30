@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 
+import './graph.css'
+
 export class graph extends Component {
     render() {
         return (

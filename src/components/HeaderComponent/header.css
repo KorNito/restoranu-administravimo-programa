@@ -2,7 +2,8 @@
     background-color: white;
     border: solid;
     height: 200px;
-    margin-bottom: 20px;
+    grid-column: 1 / 4;
+    grid-row: 1;
 }
 
 #restaurant-logo{

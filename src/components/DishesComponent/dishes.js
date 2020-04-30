@@ -38,7 +38,7 @@ componentDidMount(){
     render() {
       const {posts} = this.state
         return (
-          <div>
+          <div className="dishes-component">
                 <div className="Dishes">
     <input id="dishes-input" type="text" placeholder="Dishes"/>
     <div className="dropdown">
