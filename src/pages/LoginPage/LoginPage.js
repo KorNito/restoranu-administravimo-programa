@@ -4,7 +4,7 @@ import {Dashboard} from '../Dashboard/Dashboard'
 
 import { BrowserRouter, Switch, Route} from 'react-router-dom';
 
-// import './LoginPage.css'
+import './LoginPage.css'
 
 import axios from 'axios'
 
@@ -63,31 +63,13 @@ export class LoginPage extends Component {
             
             <div>
 
-                <div id="bg"></div>
-
-                    <input type='checkbox' id='form-switch'/>
-
-                <form id='login-form' method='post' onSubmit={this.submitHandler}>
-                    <input type="text" name="username" placeholder="Username" required value={username} onChange={this.changeHandler}/>
-                    <input type="password" name="password" placeholder="Password" required value={password} onChange={this.changeHandler}/>
-                    <button type='submit'>Login</button>
-                    <label for='form-switch'><span>| Forgot password</span></label>
+                <div className="bg"></div>
+                <form className='login-form' method='post' onSubmit={this.submitHandler}>
+                    <input className="username" type="text" name="username" placeholder="Username" required value={username} onChange={this.changeHandler}/>
+                    <input className="password" type="password" name="password" placeholder="Password" required value={password} onChange={this.changeHandler}/>
+                    <button className="Login" type='submit'>Login</button>
+                    <label className='form-switch'><span>| Forgot password</span></label>
                 </form>
-                {/*
-                <form id='register-form' action="" method='post'>
-                    <input type="text" placeholder="Username" required/>
-                    <input type="email" placeholder="Email" required/>
-                    <input type="password" placeholder="Password" required/>
-                    <input type="password" placeholder="Re Password" required/>
-                    <button type='submit'>Register</button>
-                    <label for='form-switch'>Already Member ? Sign In Now..</label>
-                </form>
-
-                <form id='forgot_password_form' action="" method='post'>
-                    <input type="email" placeholder="Email" required/>
-                    <button type='submit'>Send</button>
-                    <label for='form-switch'>Go back to login</label>
-                </form>    */}
             </div>
         )
     }
