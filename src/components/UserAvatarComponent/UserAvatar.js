@@ -48,7 +48,7 @@ export class UserAvatar extends Component {
 
     logout = () => {
         localStorage.clear();
-        // window.location.href = "./src/pages/LoginPage";
+        window.location.href = "http://localhost:3000/";
     }
 
     render() {
