@@ -64,7 +64,7 @@ export class LoginPage extends Component {
             <div>
 
                 <div className="bg"></div>
-                <form className='login-form' method='post' onSubmit={this.submitHandler}>
+                <form id='login-form' method='post' onSubmit={this.submitHandler}>
                     <input className="username" type="text" name="username" placeholder="Username" required value={username} onChange={this.changeHandler}/>
                     <input className="password" type="password" name="password" placeholder="Password" required value={password} onChange={this.changeHandler}/>
                     <button className="Login" type='submit'>Login</button>
