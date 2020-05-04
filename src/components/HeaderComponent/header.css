@@ -1,18 +1,19 @@
 .header-component{
     background-color: white;
-    border: solid;
-    height: 200px;
+    border: none;
+    height: auto;
+    height: 150px;
     grid-column: 1 / 4;
     grid-row: 1;
+    box-shadow: 0 2px 6px 0 rgba(114,124,245,.5);
+    border-radius: .25rem;
 }
 
 #restaurant-logo{
     height: auto;
-    width: 200px;
+    width: 150px;
+    border-radius: .25rem;
+
 }
 
-@media screen and (max-width: 450px) {
-    header{
-        box-shadow: none;
-    }
-}
+

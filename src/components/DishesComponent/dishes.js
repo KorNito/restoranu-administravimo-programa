@@ -17,13 +17,13 @@ export class dishes extends Component {
 
 componentDidMount(){
   axios({
-    url: 'https://protected-brook-06093.herokuapp.com/menu',
+    url: 'https://protected-brook-06093.herokuapp.com/getChainDishes',
     method: 'get',
     headers: {
       'Authorization': `Bearer ` + jwt,
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',
-      'RestaurantAddress': 'Kalvariju g. 55'
+      // 'RestaurantAddress': 'Kalvariju g. 55'
     }  
   })
     .then(response => {
@@ -40,7 +40,7 @@ componentDidMount(){
         return (
           <div className="dishes-component">
                 <div className="Dishes">
-    <input id="dishes-input" type="text" placeholder="Dishes"/>
+    {/* <input id="dishes-input" type="text" placeholder="Dishes"/>
     <div className="dropdown">
       <input id="dishes-input2" type="text" placeholder="Ingridients"/>
       <div id="myDropdown" className="dropdown-content">
@@ -48,7 +48,7 @@ componentDidMount(){
        <a href="#Beef">Beef</a>
        <a href="#Pork">Pork</a>
      </div>
-    </div>
+    </div> */}
     {
       posts.length ?
       posts.map(post => 

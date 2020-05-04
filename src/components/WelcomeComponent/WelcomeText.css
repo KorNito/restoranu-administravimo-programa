@@ -1,0 +1,19 @@
+.WelcomeText{
+    grid-column: 1 / 4;
+    grid-row: 2;
+    margin-top: 25px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+}
+
+
+.MainWelcome{
+    font-size: 1.125rem;
+}
+
+.AdminPanel{
+    font-family: "Nunito Sans",sans-serif;
+    font-size: .875rem;
+    font-weight: 400;
+    color: #6c757d;
+}

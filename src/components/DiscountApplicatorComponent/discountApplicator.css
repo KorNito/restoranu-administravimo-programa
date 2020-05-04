@@ -1,20 +1,20 @@
 .discount-applicator{
     background-color: #ffffff;
-    border: solid;
+    border: none;
     grid-column: 3;
     grid-row: 3;
+    box-shadow: 0 2px 6px 0 rgba(114,124,245,.5);
+    border-radius: .25rem;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    padding: 25px;
+    /* width: 285px; */
 }
-
 #discount-applicator-title{
-    margin-left: 25px;
-}
-#discount-applicator-title{
-    margin-top: 20px;
     margin-bottom: 12px;
 }
 
-#discount-amount{
-    margin-left: 25px;
+#discount-amount, #dish-id{
     border: 1px solid #e3eaef;
     color: #1b1d1f;
     background-color: #fff;
@@ -22,4 +22,25 @@
     padding-bottom: 6.0px;
     width: 70px;
     margin-bottom: 20px;
+}
+
+#dish-id{
+    margin-left: 10px;
+}
+
+#submitDiscountButton{
+    border-style: none;
+    color: #fff;
+    background-color: #ee0d0d;
+    border-color: #ee0d0d;
+    box-shadow: 0 2px 6px 0 rgba(114,124,245,.5);
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-size: .875rem;
+    line-height: 1.5;
+    border-radius: 0rem .25rem .25rem 0rem;
+    margin: 5px;
+
 }
