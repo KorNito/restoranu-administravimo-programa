@@ -7,7 +7,6 @@ import { BrowserRouter, Switch, Route} from 'react-router-dom';
 // import './LoginPage.css'
 
 import axios from 'axios'
-import { render } from '@testing-library/react';
 
 export class LoginPage extends Component {
     constructor(props) {

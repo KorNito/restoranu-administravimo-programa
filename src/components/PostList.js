@@ -16,7 +16,6 @@ export class PostList extends Component {
     }
 
     submitHandler = (e) => {
-        e.preventDefault()
         console.log(this.state)
         axios.post('https://protected-brook-06093.herokuapp.com/authenticate', this.state)
             .then(response => {

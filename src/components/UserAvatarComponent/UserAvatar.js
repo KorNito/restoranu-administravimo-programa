@@ -1,8 +1,12 @@
 import React, { Component } from 'react'
 
+import LoginPage from '../../pages/LoginPage/LoginPage'
+
 import axios from 'axios'
 
 import './UserAvatar.css';
+
+import { BrowserRouter, Switch, Route, Router} from 'react-router-dom';
 
 const jwt = localStorage.getItem('jwt');
 
@@ -43,7 +47,8 @@ export class UserAvatar extends Component {
     }
 
     logout = () => {
-        window.open('./src/pages/LoginPage.js');
+        localStorage.clear();
+        // window.location.href = "./src/pages/LoginPage";
     }
 
     render() {

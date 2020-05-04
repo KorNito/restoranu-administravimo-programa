@@ -2,6 +2,7 @@ import React from 'react';
 import UserAvatar from './UserAvatar';
 import { render } from '@testing-library/react';
 
+
 test("Username avatar image exists", () => {
     const {getByTestId, getByText} = render(<UserAvatar></UserAvatar>);
 

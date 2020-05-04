@@ -14,8 +14,9 @@ export class restaurantList extends Component {
             posts: []     
         }
     }
-
+    
     componentDidMount(){
+      
       axios({
         url: 'https://protected-brook-06093.herokuapp.com/addresses',
         method: 'get',
@@ -33,7 +34,7 @@ export class restaurantList extends Component {
           console.log(error);
         });
     }
-
+  
     render() {
         const {posts} = this.state
         return (
