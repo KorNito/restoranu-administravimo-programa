@@ -4,7 +4,7 @@ import axios from 'axios'
 
 import './dishes.css'
 
-const jwt = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJydXRhQGV4YW1wbGUuZXhhbXBsZSIsImV4cCI6MTU4ODIyOTk5NiwiaWF0IjoxNTg4MTkzOTk2fQ.aQbqq6hqaeMhmYvkfv8PpnUMnfdR6ufnswLIhscpBZU";
+const jwt = localStorage.getItem('jwt');
 
 export class dishes extends Component {
   constructor(props) {

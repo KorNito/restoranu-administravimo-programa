@@ -1,6 +1,6 @@
 .sales-graph{
     background-color: #ffffff;
     border: solid;
-    grid-column: 2;
+    grid-column: 2 / 4;
     grid-row: 2;
 }

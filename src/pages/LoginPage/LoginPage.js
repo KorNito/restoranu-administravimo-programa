@@ -1,38 +1,37 @@
 import React, { Component } from 'react'
 
-import { 
-    BrowserRouter,
-    Route,
-    Switch
-} from 'react-router-dom'
-
 import {Dashboard} from '../Dashboard/Dashboard'
 
-//import './LoginPage.css'
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
+
+// import './LoginPage.css'
 
 import axios from 'axios'
+import { render } from '@testing-library/react';
 
 export class LoginPage extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-            username: '',
-            password: '',
+            username: undefined,
+            password: undefined,
         }
     }
 
     changeHandler = (e) => {
-        this.setState({ [e.target.name]: e.target.value })
+        this.setState({ 
+            [e.target.name]: e.target.value 
+        })
     }
 
-    setAuthorizationToken(token){
-        if(token){
-            axios.defaults.headers.common['Authorization'] = `Bearer ${token}`; 
-        } else {
-            delete axios.defaults.headers.common['Authorization'];
-        }
-    }
+    // setAuthorizationToken(token){
+    //     if(token){
+    //         axios.defaults.headers.common['Authorization'] = `Bearer ${token}`; 
+    //     } else {
+    //         delete axios.defaults.headers.common['Authorization'];
+    //     }
+    // }
 
     submitHandler = (e) => { 
         e.preventDefault()
@@ -51,7 +50,7 @@ export class LoginPage extends Component {
             const token = response.data.jwt;
             localStorage.setItem('jwt', token);
             console.log(token);
-
+            this.props.history.push('/dashboard');
             
         })
         .catch(error => {

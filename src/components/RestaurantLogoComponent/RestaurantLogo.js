@@ -4,7 +4,7 @@ import axios from 'axios';
 
 import './RestaurantLogo.css';
 
-const jwt = "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJydXRhQGV4YW1wbGUuZXhhbXBsZSIsImV4cCI6MTU4ODIzMjA3OCwiaWF0IjoxNTg4MTk2MDc4fQ.2-SQUiDTYo1It-dEPb9ha91LigOrbYN44ROsBfbiBvk";
+const jwt = localStorage.getItem('jwt');
 
 export class RestaurantLogo extends Component {
 

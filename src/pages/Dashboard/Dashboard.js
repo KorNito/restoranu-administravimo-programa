@@ -4,7 +4,6 @@ import React, { Component } from 'react';
 import Header from '../../components/HeaderComponent/header';
 import RestaurantList from '../../components/RestaurantListComponent/restaurantList'
 import Graph from '../../components/GraphComponent/graph'
-import Months from '../../components/MonthsComponent/months'
 import Dishes from '../../components/DishesComponent/dishes'
 import DiscountApplicator from '../../components/DiscountApplicatorComponent/discountApplicator'
 import Footer from '../../components/FooterComponent/footer'
@@ -18,7 +17,7 @@ export class Dashboard extends Component {
                 <Header class='HeaderClass' />
                 <RestaurantList class='RestaurantListClass'/>
                 <Graph class='GraphClass'/>
-                <Months class='MonthsClass'/>
+                
                 <Dishes class='DishesClass'/>
                 <DiscountApplicator class='DiscountApplicatorClass'/>
                 <Footer class='FooterClass'/> 

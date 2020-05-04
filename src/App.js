@@ -8,6 +8,9 @@ import Dashboard from './pages/Dashboard/Dashboard'
 import GetList from './components/GetList';
 import PostList from './components/PostList';
 
+
+import { BrowserRouter, Switch, Route} from 'react-router-dom';
+
 // Main css
 import './App.css';
 
@@ -16,7 +19,12 @@ class App extends Component {
   render() {
     return(
       <div className="App">
-        <Dashboard/>
+                <BrowserRouter>
+                    <Switch>
+                        <Route path='/' exact component={LoginPage}/>
+                        <Route path='/dashboard' component={Dashboard}/>
+                    </Switch>
+                </BrowserRouter>
       </div>
     );
   }
