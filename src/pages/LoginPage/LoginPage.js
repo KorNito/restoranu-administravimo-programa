@@ -22,7 +22,7 @@ export class LoginPage extends Component {
         this.setState({ 
             [e.target.name]: e.target.value 
         })
-    }
+    } 
 
     // setAuthorizationToken(token){
     //     if(token){

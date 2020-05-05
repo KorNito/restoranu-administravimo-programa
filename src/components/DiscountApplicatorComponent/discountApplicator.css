@@ -14,7 +14,7 @@
     margin-bottom: 12px;
 }
 
-#discount-amount, #dish-id{
+#discount-amount, #dish-name{
     border: 1px solid #e3eaef;
     color: #1b1d1f;
     background-color: #fff;
@@ -24,7 +24,7 @@
     margin-bottom: 20px;
 }
 
-#dish-id{
+#dish-name{
     margin-left: 10px;
 }
 
