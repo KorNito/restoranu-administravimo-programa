@@ -55,6 +55,24 @@ submitHandler = (e) => {
   .then(response => {
     console.log(response)
     console.log('issiusti duomenys')
+    axios({
+      url: 'https://protected-brook-06093.herokuapp.com/getChainDishes',
+      method: 'get',
+      headers: {
+        'Authorization': `Bearer ` + jwt,
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+        // 'RestaurantAddress': 'Kalvariju g. 55'
+      }  
+    })
+      .then(response => {
+        console.log(response)
+        this.setState({posts: response.data})
+      }) 
+      .catch(error => {
+        console.log(error);
+      });
+    console.log('duomenys atnaujinti')
   })
   .catch(error => {
     console.log(error)
