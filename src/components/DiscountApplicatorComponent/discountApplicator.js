@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 import './discountApplicator.css';
 
 export class discountApplicator extends Component {
+
     render() {
         return (
             <div className="discount-applicator">
@@ -10,7 +11,7 @@ export class discountApplicator extends Component {
                 <form>
                     <input id="discount-amount" type="text" placeholder=" New price"/>
                     <input id="dish-id" type="text" placeholder="Dish ID"/>
-                    <button id="submitDiscountButton" type="submit" value="submit" onClick={()=>{ alert('Discount was applied'); }}>Submit</button>
+                    <button id="submitDiscountButton" type="submit" value="submit" onClick={this.applyDiscount}>Submit</button>
                 </form>
             </div>  
         )

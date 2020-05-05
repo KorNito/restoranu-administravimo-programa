@@ -54,7 +54,8 @@ componentDidMount(){
       posts.map(post => 
         <div className="restaurant-dishes">
           <img id="dishes_photo"  src={post.img_url}/>
-          <p id="dishes-name" key={post.id} >{post.name}</p>
+          <p id="dishes-name" key={post.id} >Name: {post.name}</p>
+          <p id="dishes-price" >Price: {post.price}€</p>
         </div>) : 
       null
     }

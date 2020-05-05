@@ -15,7 +15,7 @@ class Welcome extends Component {
       return (
         <div className="WelcomeText">
             <h2 className="MainWelcome">Hi, Welcome Back!</h2>
-            <h2 className="AdminPanel">Your restaurent admin panel</h2>
+            <h2 className="AdminPanel">Your restaurant admin panel</h2>
         </div>
       )
     }
