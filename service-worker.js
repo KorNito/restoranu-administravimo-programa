@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Restoranu-administravimo-programa/precache-manifest.8c794a319acddd14e1eadb7fbeb6f505.js"
+  "/Restoranu-administravimo-programa/precache-manifest.18e5cab978554c79944f26a739f66095.js"
 );
 
 self.addEventListener('message', (event) => {
