@@ -1,6 +1,6 @@
 .dishes-component{
-    grid-column: 2 / 3;
     grid-row: 3;  
+    grid-column: 2 / 3;
     border: none;
 }
 
@@ -9,13 +9,10 @@
     flex-wrap: wrap;
     height: auto;
     background-color: #ffffff;
-    box-shadow: 0 2px 6px 0 rgba(114,124,245,.5);
     border-radius: .25rem;
-    margin-bottom: 25px;
-    margin-right: 25px;
-    margin-left: 25px;
-    padding: 10px;
-    padding-left: 15px;
+    box-shadow: 0 2px 6px 0 rgba(114,124,245,.5);
+    margin:0px 25px 25px 25px;
+    padding: 10px 15px;
   }
 
   #dishes-input{
@@ -26,32 +23,30 @@
 .displayed-dishes{
     height: 120px;
     width: 100px;
-    margin: 5px;
     text-align: center;
     align-items: center;
+    margin: 5px;
 }
 
 .restaurant-dishes{
-    margin-top: 5px;
     width: 100px;
-    margin-right: 18px;
     border: solid;
     border-radius: 5px;
-    margin-bottom: 5px;
+    margin: 5px 18px 5px 0px;
 }
 
 #dishes-price{
-    margin-left: 10px;
-    font-size: 13px;
+    position: relative;
+    z-index: 999;
     text-align: center;
     font-weight: bold;
-    z-index: 999;
-    position: relative;
+    margin-left: 10px;
+    font-size: 13px;
 }
 
 #dishes-name{
-    z-index: 999;
     position: relative;
+    z-index: 999;
     text-align: center;
     line-height: 1.1;
     font-size: 14px;
@@ -61,19 +56,17 @@
 #dishes_photo{
     width: 100px;
     height: 100px;
-    z-index: 999;
     position: relative;
+    z-index: 999;
 }
 
 .input-dishes-photo{
-    z-index: 999;
-    position: relative;
     width: 100px;
     height: 100px;
-    margin-left: 5px; 
-    margin-right: 18px;
-    margin-top: 9px;
-	cursor:pointer;
+    position: relative;
+    z-index: 999;
+    cursor:pointer;
+    margin: 9px 18px 0px 5px;
 }
 
 .input-dishes-photo:hover{
@@ -82,64 +75,56 @@
 }
 
 #new-dish-form{
-    background-color: rgba(0, 0, 0, 0.89);
-    position:absolute;
-    z-index: 1000;
-	left:50%;
-	top:50%;
-	transform: translate(-50%,-50%);
-    background-color: rgba(255, 255, 255, 0.959);
-    box-shadow: 0 2px 6px 3000px rgba(156, 156, 156, 0.671);
-	border-radius:3px;
     width: 250px;
     height: 200px;
+	left:50%;
+	top:50%;
+    position:absolute;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.959);
+	transform: translate(-50%,-50%);
+	border-radius:3px;
+    box-shadow: 0 2px 6px 3000px rgba(156, 156, 156, 0.671);
 }
 
 .input-container{
     position:absolute;
-    margin-bottom:25px;
-    margin-left: 45px;
-    
+    margin: 0px 0px 25px 55px;
 }
+
 #label{
     color: white;
 }
 
 .input-container input{ 
-    border:0;
-    border-bottom:1px solid #555;  
-    background:transparent;
     width:100%;
-    padding:8px 0 5px 0;
     font-size:16px;
     color:#fff;
+    border:0;
+    background:transparent;
+    border-bottom:1px solid #555;  
+    padding:8px 0 5px 0;
 }
-
 
 .Exit-btn{
-    padding: 0px 5px 0px 5px;
+	cursor:pointer;
     font-weight: bold;
-    margin-bottom: 5px;
-    margin-left: 225px;
     color:#fff;
 	background-color:#e74c3c;
-	cursor:pointer;
     border-radius:20px;
-    margin-top: 2px;
+    padding: 0px 5px 0px 5px;
+    margin: 2px 0px 5px 225px;
 }
 
-
 .btn{
+	position:relative;
+	cursor:pointer;
 	color:#fff;
 	background-color:#e74c3c;
+	text-transform:uppercase;
 	outline: none;
     border: 0;
-    color: #fff;
-	padding:10px 20px;
-	text-transform:uppercase;
-    margin-top:20px;
-    margin-left: 84px;
 	border-radius:2px;
-	cursor:pointer;
-	position:relative;
+	padding:10px 20px;
+    margin: 20px 0px 0px 84px;
 }

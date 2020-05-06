@@ -17,15 +17,3 @@
     font-size: 3.8em;
     margin: auto;
 }
-
-@media screen and (max-width: 720px) {
-    #restaurant-name{
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    #restaurant-name{
-        margin-left: 20px;
-    }
-}

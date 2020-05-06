@@ -1,24 +1,16 @@
 .restaurant-list{
-    
+    grid-row: 3;
+    grid-column: 1;
     background-color: #ffffff;
     border: none;
-    grid-column: 1;
-    grid-row: 3;
-    box-shadow: 0 2px 6px 0 rgba(114,124,245,.5);
     border-radius: .25rem;
-    margin-left: 25px;
-    margin-bottom: 25px;
-    /* display: contents; */
-}
-
-#restaurant-search{
-    margin: 10px;
-    display: none;
+    box-shadow: 0 2px 6px 0 rgba(114,124,245,.5);
+    margin: 0px 0px 25px 25px;
 }
 
 .restaurant-list li{
     position: relative;
     z-index: 999;
-    margin: 10px;
     list-style: none;
+    margin: 10px;
 }

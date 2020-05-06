@@ -1,12 +1,11 @@
 .header-component{
+    grid-row: 1;
+    grid-column: 1 / 4;
+    height: 150px;
     background-color: white;
     border: none;
-    height: auto;
-    height: 150px;
-    grid-column: 1 / 4;
-    grid-row: 1;
-    box-shadow: 0 2px 6px 0 rgba(114,124,245,.5);
     border-radius: .25rem;
+    box-shadow: 0 2px 6px 0 rgba(114,124,245,.5);
 }
 
 #restaurant-logo{

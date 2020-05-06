@@ -2,19 +2,11 @@
     display: grid;
 }
 
-@media screen and (max-width: 450px) {
-    header{
-        box-shadow: none;
-    }
-}
-
 @media screen and (max-width: 1375px) {
-
     .dishes-component{
         grid-row: 3;
         grid-column: 2 / 4;
     }
-
     .discount-applicator{
         grid-row: 4;
         grid-column: 1 / 4;
@@ -25,9 +17,13 @@
         grid-row: 5;
         grid-column: 1 / 4;
     }
+}
 
-  }
-
+@media screen and (max-width: 1000px) {
+    #restaurant-name{
+        margin-left: 20px;
+    }
+} 
 
 @media screen and (max-width: 845px) {
     .restaurant-list{
@@ -35,31 +31,44 @@
         grid-column: 1 / 4;
         margin-right: 25px;
     }
-
     .dishes-component{ 
         grid-row: 4;  
         grid-column: 1 / 4;
     }
-
     .discount-applicator{
         grid-row: 5;
         grid-column: 1 / 4;
     }
-
     Footer{
         grid-row: 6;
         grid-column: 1 / 4;
     }
-  }
+}
 
-  @media screen and (max-width: 715px) {
+@media screen and (max-width: 730px) {
+    #restaurant-name{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 715px) {
     #change-password-form{
         top: 33%;
     }
-  }
+}
 
-  @media screen and (max-width: 450) {
+@media screen and (max-width: 450px) {
     .dishes-component{
         margin: none;
     }
-  }
+}
+
+@media screen and (max-width:  360px) {
+    #username{
+        display: none;
+    }
+    .restaurant-dishes{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}

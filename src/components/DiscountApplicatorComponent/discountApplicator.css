@@ -1,15 +1,14 @@
 .discount-applicator{
-    background-color: #ffffff;
-    border: none;
-    grid-column: 3;
     grid-row: 3;
+    grid-column: 3;
+    background-color: #ffffff;
     box-shadow: 0 2px 6px 0 rgba(114,124,245,.5);
+    border: none;
     border-radius: .25rem;
-    margin-bottom: 25px;
-    margin-right: 25px;
     padding: 25px;
-    /* width: 285px; */
+    margin: 0px 25px 25px 0px;
 }
+
 #discount-applicator-title{
     position: relative;
     z-index: 999;
@@ -19,12 +18,11 @@
 #discount-amount, #dish-name{
     position: relative;
     z-index: 999;
-    border: 1px solid #e3eaef;
-    color: #1b1d1f;
-    background-color: #fff;
-    padding-top: 6.65px;
-    padding-bottom: 6.0px;
     width: 70px;
+    color: #1b1d1f;
+    border: 1px solid #e3eaef;
+    background-color: #fff;
+    padding: 6.65px 0px 6.0px 0px;
     margin-bottom: 20px;
 }
 
@@ -36,18 +34,14 @@
     position: relative;
     z-index: 999;
 	cursor:pointer;
-    border-style: none;
-    color: #fff;
-    background-color: #ee0d0d;
-    border-color: #ee0d0d;
-    box-shadow: 0 2px 6px 0 rgba(114,124,245,.5);
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 6px;
-    padding-bottom: 6px;
     font-size: .875rem;
     line-height: 1.5;
+    color: #fff;
+    background-color: #ee0d0d;
+    border-style: none;
+    border-color: #ee0d0d;
     border-radius: 0rem .25rem .25rem 0rem;
+    box-shadow: 0 2px 6px 0 rgba(114,124,245,.5);
+    padding: 6px 12px 6px 12px;
     margin: 5px;
-
 }

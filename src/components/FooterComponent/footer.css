@@ -1,11 +1,10 @@
 footer{
+    grid-row: 4;
+    grid-column: 1 / 4;
     left: 0;
     bottom: 0;
     width: 100%;
     color: black;
     text-align: center;
-    margin-top: 10px;
-    grid-column: 1 / 4;
-    grid-row: 4;
     margin-top: 150px;
 }
