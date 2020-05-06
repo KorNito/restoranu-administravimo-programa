@@ -22,8 +22,6 @@ export class LoginPage extends Component {
 
     submitHandler = (e) => { 
         e.preventDefault()
-        console.log(this.state.username)
-        console.log(this.state.password)
         axios({
             method: 'post',
             url:'https://protected-brook-06093.herokuapp.com/authenticate',
@@ -33,12 +31,9 @@ export class LoginPage extends Component {
             }
         })
         .then(response => {
-            console.log(response)
             const token = response.data.jwt;
             localStorage.setItem('jwt', token);
-            console.log(token);
             this.props.history.push('/dashboard');
-            
         })
         .catch(error => {
             console.log(error)
