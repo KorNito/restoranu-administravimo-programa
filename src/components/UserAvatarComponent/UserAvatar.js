@@ -10,6 +10,8 @@ import '../../App.css';
 
 import { BrowserRouter, Switch, Route, Router} from 'react-router-dom';
 
+const jwt = localStorage.getItem('jwt');
+
 export class UserAvatar extends Component {
 
     constructor(props) {
@@ -20,7 +22,7 @@ export class UserAvatar extends Component {
             status: false,
             passwordFormStatus: false,
             oldPassword: undefined,
-            newPassword: undefined
+            newPassword: undefined,
         }
     }
 
@@ -29,8 +31,6 @@ export class UserAvatar extends Component {
     }
 
     componentDidMount(){
-        const jwt = localStorage.getItem('jwt');
-
         axios({
           url: 'https://protected-brook-06093.herokuapp.com/getUserData',
           method: 'get',
@@ -69,13 +69,12 @@ export class UserAvatar extends Component {
 
     submitPasswordChange = (e) => {
         e.preventDefault()
-        const jwt = localStorage.getItem('jwt');
         console.log(this.state.oldPassword);
         console.log(this.state.newPassword);
         console.log('duomenys gauti');
         axios({
-            url: '',
             method: 'patch',
+            url: 'https://protected-brook-06093.herokuapp.com/changePassword',
             headers: {
                 'Authorization': `Bearer ` + jwt,
                 'Content-Type': 'application/json',
@@ -88,11 +87,18 @@ export class UserAvatar extends Component {
           })
             .then(response => {
               console.log(response)
-              this.setState({posts: response.data})
               console.log('duomenys issiusti')
+              alert(JSON.stringify(response.data))
             }) 
             .catch(error => {
-              console.log(error);
+              if (error.response.status === 400) {
+                alert('Incorrect password');
+              } else if (error.response.status === 500){
+                alert('Server error')
+              } else {
+                alert(error)
+              }
+              
             });
     }
 
@@ -118,7 +124,7 @@ export class UserAvatar extends Component {
                 </div>}
 
                 {this.state.passwordFormStatus &&
-                <div> 
+                <div>
                   <form id="change-password-form" method='patch' onSubmit={this.submitPasswordChange}>
                     <button class="Exit-btn" onClick={this.togglePasswordForm}>X</button>
                     <ul>
