@@ -21,6 +21,7 @@ export class UserAvatar extends Component {
             posts: [],
             status: false,
             passwordFormStatus: false,
+            darkmodeFormStatus:false,
             oldPassword: undefined,
             newPassword: undefined,
         }
@@ -61,6 +62,13 @@ export class UserAvatar extends Component {
             passwordFormStatus: !this.state.passwordFormStatus
         })
     }
+
+    toggleDarkmode = () =>{
+      this.setState({
+            darkmodeFormStatus: !this.state.darkmodeFormStatus
+      })
+  }
+
 
     logout = () => {
         localStorage.clear();
@@ -118,8 +126,15 @@ export class UserAvatar extends Component {
                 <div id="settings-menu">
                     <ul>
                         <a><li id='menu-settings' onClick={this.togglePasswordForm}><span>⚙️</span> Change password</li></a>
-                        <a><li id='dark-mode' onClick={this.logout}> <span>🌛</span> Dark Mode</li></a>
+                        <a><li id='dark-mode' onClick={this.toggleDarkmode}> <span>🌛</span> Blue light filter</li></a>
                         <a><li id='menu-logout' onClick={this.logout}> <span>🗝️</span> Log out</li></a>
+                    </ul>
+                </div>}
+                
+                {this.state.darkmodeFormStatus &&
+                <div> 
+                    <ul>
+                      <div className="darkmode"></div>
                     </ul>
                 </div>}
 

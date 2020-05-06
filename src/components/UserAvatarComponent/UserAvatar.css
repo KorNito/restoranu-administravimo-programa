@@ -34,11 +34,12 @@
     font-size: 1.075rem;
     color: #6c757d;
     font-weight: 600;
-    padding: 7px 20px 7px 20px;
+    padding: 0px 20px 7px 20px;
+    margin-top: 7px;
 	cursor:pointer;
 }
 
-#menu-settings:hover, #menu-logout, #dark-mode:hover{
+#menu-settings:hover, #menu-logout:hover, #dark-mode:hover{
     background: #ffffff;
     color: #ee0d0d;
     text-decoration: underline;

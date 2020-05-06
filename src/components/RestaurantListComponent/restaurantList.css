@@ -17,8 +17,7 @@
 }
 
 .restaurant-list li{
-    display: flex;
-    flex-wrap: wrap;
+    position: relative;
     z-index: 999;
     margin: 10px;
     list-style: none;
