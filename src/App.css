@@ -8,3 +8,8 @@
 .App{
   background-color: #FAFBFE;
 }
+
+.dark-mode {
+  background-color: black;
+  color: white;
+}

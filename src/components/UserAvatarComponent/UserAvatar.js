@@ -5,6 +5,7 @@ import LoginPage from '../../pages/LoginPage/LoginPage'
 import axios from 'axios'
 
 import './UserAvatar.css';
+import '../../App.css';
 
 import { BrowserRouter, Switch, Route, Router} from 'react-router-dom';
 
@@ -20,6 +21,10 @@ export class UserAvatar extends Component {
             status: false     
         }
     }
+    myFunction() {
+        var element = document.body;
+        element.classList.toggle("dark-mode");
+     }
 
     componentDidMount(){
         axios({
@@ -65,7 +70,8 @@ export class UserAvatar extends Component {
                 {this.state.status &&
                 <div id="settings-menu">
                     <ul>
-                        <a><li id='menu-settings'><span>⚙️</span> Settings</li></a>
+                        <a><li id='menu-settings'><span>⚙️</span> Change password</li></a>
+                        <a><li id='dark-mode' onclick={this.myFunction()}> <span>🌛</span> Dark Mode</li></a>
                         <a><li id='menu-logout' onClick={this.logout}> <span>🗝️</span> Log out</li></a>
                     </ul>
                 </div>}

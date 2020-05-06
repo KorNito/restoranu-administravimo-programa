@@ -1,5 +1,4 @@
 footer{
-    position: relative;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -8,4 +7,5 @@ footer{
     margin-top: 10px;
     grid-column: 1 / 4;
     grid-row: 4;
+    margin-top: 150px;
 }

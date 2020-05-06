@@ -32,31 +32,45 @@
 }
 
 .restaurant-dishes{
-    margin-top: 10px;
-    width: 80px;
-    margin-right: 35px;
+    margin-top: 5px;
+    width: 100px;
+    margin-right: 18px;
+    border: solid;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#dishes-price{
+    margin-left: 10px;
+    font-size: 13px;
+    text-align: center;
+    font-weight: bold;
 }
 
 #dishes-name{
-    font-size: x-large;
     text-align: center;
+    line-height: 1.1;
+    font-size: 14px;
+    margin-left: 5px;
 }
 
 #dishes_photo{
     width: 100px;
     height: 100px;
-    margin-left: 5px;
 }
 
 .input-dishes-photo{
-    margin-top: 9px;
     width: 100px;
     height: 100px;
     margin-left: 5px; 
+    margin-right: 18px;
+    margin-top: 9px;
+	cursor:pointer;
 }
 
 .input-dishes-photo:hover{
     border: solid;
+	border-radius:30px;
 }
 
 #new-dish-form{
@@ -65,24 +79,21 @@
 	left:50%;
 	top:50%;
 	transform: translate(-50%,-50%);
-    background-color: rgba(0, 0, 0, 0.89);
+    background-color: rgba(255, 255, 255, 0.959);
+    box-shadow: 0 2px 6px 3000px rgba(114,124,245,.5);
 	border-radius:3px;
-	padding:70px 100px;
+    width: 250px;
+    height: 200px;
 }
 
 .input-container{
 	position:absolute;
-	margin-bottom:25px;
+    margin-bottom:25px;
+    margin-left: 55px;
+    
 }
-
-.input-container label{
-	position:absolute;
-	top:0px;
-	left:0px;
-	font-size:16px;
-	color:#fff;	
-    transition: all 0.5s ease-in-out;
-    margin: 5px;
+#label{
+    color: white;
 }
 
 .input-container input{ 
@@ -95,11 +106,19 @@
     color:#fff;
 }
 
-.input-container input:focus{ 
-    border:none;	
-    outline:none;
-    border-bottom:1px solid #e74c3c;	
+
+.Exit-btn{
+    padding: 0px 5px 0px 5px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    margin-left: 225px;
+    color:#fff;
+	background-color:#e74c3c;
+	cursor:pointer;
+    border-radius:20px;
+    margin-top: 2px;
 }
+
 
 .btn{
 	color:#fff;
@@ -109,15 +128,9 @@
     color: #fff;
 	padding:10px 20px;
 	text-transform:uppercase;
-	margin-top:50px;
+    margin-top:20px;
+    margin-left: 75px;
 	border-radius:2px;
 	cursor:pointer;
 	position:relative;
-}
-
-.input-container input:focus ~ label,
-.input-container input:valid ~ label{
-	top:-12px;
-	font-size:12px;
-	
 }

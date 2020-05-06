@@ -26,16 +26,17 @@
     right: 150px;
 }
 
-#menu-settings, #menu-logout {
+#menu-settings, #menu-logout, #dark-mode{
     list-style: none;
     font-family: "Nunito Sans",sans-serif;
     font-size: 1.075rem;
     color: #6c757d;
     font-weight: 600;
     padding: 7px 20px 7px 20px;
+	cursor:pointer;
 }
 
-#menu-settings:hover, #menu-logout:hover{
+#menu-settings:hover, #menu-logout, #dark-mode:hover{
   background: #ffffff;
   color: #ee0d0d;
   text-decoration: underline;

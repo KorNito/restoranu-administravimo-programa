@@ -114,29 +114,30 @@ componentDidMount(){
                 <a href="#Pork">Pork</a>
               </div>
               </div> */}
+              <img className="input-dishes-photo" src='https://freesvg.org/img/mono-tab-new.png' alt="Add Dishes" onClick={this.toggle}/>
+              {this.state.status &&
+                <div> 
+                  <form id="new-dish-form" method='put' onSubmit={this.submitHandler}>
+                    <button class="Exit-btn" onClick={this.toggle}>X</button>
+                    <ul>
+                      <div className=".input-container"><input className="input-container" placeholder="Dish Name" name="name"  value={name} onChange={this.changeHandler}/><label id="label">*</label></div>
+                      <div className=".input-container"><input className="input-container" placeholder="Price" name="price" value={price} onChange={this.changeHandler}/><label id="label">*</label></div>
+                      <div className=".input-container"><input className="input-container" placeholder="Image Link" name="img_url" value={img_url} onChange={this.changeHandler}/><label id="label">*</label></div>
+                      <div className=".input-container"><input className="input-container" placeholder="Ingridients" name="ingridients" value={ingridients} onChange={this.changeHandler}/><label id="label">*</label></div>
+                    </ul>
+                    <button class="btn">Submit</button>
+                  </form>
+                </div>}
               {
                 posts.length ?
                 posts.map(post => 
                   <div className="restaurant-dishes">
                     <img id="dishes_photo" alt="Displayed Dish" src={post.img_url}/>
-                    <p id="dishes-name" key={post.id} >Name: {post.name}</p>
+                    <p id="dishes-name" key={post.id} >{post.name}</p>
                     <p id="dishes-price" >Price: {post.price}€</p>
                   </div>) : 
                 null
               }
-              <img className="input-dishes-photo" src='https://freesvg.org/img/mono-tab-new.png' alt="Add Dishes" onClick={this.toggle}/>
-              {this.state.status &&
-                <div> 
-                  <form id="new-dish-form" method='put' onSubmit={this.submitHandler}>
-                    <ul>
-                      <div className=".input-container"><input className="input-container" placeholder="Dish Name" name="name"  value={name} onChange={this.changeHandler}/><label>Full Name</label></div>
-                      <div className=".input-container"><input className="input-container" placeholder="Price" name="price" value={price} onChange={this.changeHandler}/><label>Price</label></div>
-                      <div className=".input-container"><input className="input-container" placeholder="Image Link" name="img_url" value={img_url} onChange={this.changeHandler}/><label>URL</label></div>
-                      <div className=".input-container"><input className="input-container" placeholder="Ingridients" name="ingridients" value={ingridients} onChange={this.changeHandler}/><label>inggridients</label></div>
-                    </ul>
-                    <button class="btn">Submit</button>
-                  </form>
-                </div>}
             </div>
         </div>
         )
