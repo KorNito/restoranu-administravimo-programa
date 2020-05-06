@@ -14,7 +14,7 @@ class App extends Component {
       <div className="App" >
             <BrowserRouter>
                 <Switch>
-                    <Route path='/' exact component={LoginPage}/>
+                    <Route path='/Restoranu-administravimo-programa' exact component={LoginPage}/>
                     <Route path='/dashboard' component={Dashboard}/>
                 </Switch>
             </BrowserRouter>
