@@ -56,11 +56,9 @@ export class dishes extends Component {
         'Authorization': `Bearer ` + jwt,
         'Content-Type': 'application/json',
         'Access-Control-Allow-Origin': '*',
-        // 'RestaurantAddress': 'Kalvariju g. 55'
       }  
     })
       .then(response => {
-        console.log(response)
         this.setState({posts: response.data})
       }) 
       .catch(error => {
