@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Restoranu-administravimo-programa/static/css/main.3627852d.chunk.css",
+    "main.js": "/Restoranu-administravimo-programa/static/js/main.130d8418.chunk.js",
+    "main.js.map": "/Restoranu-administravimo-programa/static/js/main.130d8418.chunk.js.map",
+    "runtime-main.js": "/Restoranu-administravimo-programa/static/js/runtime-main.dffeabd7.js",
+    "runtime-main.js.map": "/Restoranu-administravimo-programa/static/js/runtime-main.dffeabd7.js.map",
+    "static/js/2.02dd65a5.chunk.js": "/Restoranu-administravimo-programa/static/js/2.02dd65a5.chunk.js",
+    "static/js/2.02dd65a5.chunk.js.map": "/Restoranu-administravimo-programa/static/js/2.02dd65a5.chunk.js.map",
+    "index.html": "/Restoranu-administravimo-programa/index.html",
+    "precache-manifest.8c794a319acddd14e1eadb7fbeb6f505.js": "/Restoranu-administravimo-programa/precache-manifest.8c794a319acddd14e1eadb7fbeb6f505.js",
+    "service-worker.js": "/Restoranu-administravimo-programa/service-worker.js",
+    "static/css/main.3627852d.chunk.css.map": "/Restoranu-administravimo-programa/static/css/main.3627852d.chunk.css.map",
+    "static/js/2.02dd65a5.chunk.js.LICENSE.txt": "/Restoranu-administravimo-programa/static/js/2.02dd65a5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.dffeabd7.js",
+    "static/js/2.02dd65a5.chunk.js",
+    "static/css/main.3627852d.chunk.css",
+    "static/js/main.130d8418.chunk.js"
+  ]
+}
