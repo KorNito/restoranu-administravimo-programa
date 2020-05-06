@@ -9,7 +9,8 @@
   background-color: #FAFBFE;
 }
 
-.dark-mode {
-  background-color: black;
-  color: white;
+.style1{
+  background-color:red;
+  color:white;
+  font-size:44px;
 }

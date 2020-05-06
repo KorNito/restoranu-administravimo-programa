@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 
 import LoginPage from '../../pages/LoginPage/LoginPage'
+import App from '../../App'
 
 import axios from 'axios'
 
@@ -21,10 +22,10 @@ export class UserAvatar extends Component {
             status: false     
         }
     }
-    myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-     }
+    myFunction()
+    {
+        document.getElementsByClassName("App").style.color= "red";
+    }
 
     componentDidMount(){
         axios({
