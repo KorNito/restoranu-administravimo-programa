@@ -42,7 +42,7 @@ export class RestaurantLogo extends Component {
             posts.length ?
             posts.map(post => 
               <div className="restaurant-logo-component">
-                <img id="restaurant-logo" src={post.logo_url}/>
+                <img id="restaurant-logo" alt="Restaurant logo" src={post.logo_url}/>
                 <p id="restaurant-name" key={post.id}>{post.addressOrChain}</p>
               </div>) : 
             null

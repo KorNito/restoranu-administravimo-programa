@@ -111,7 +111,7 @@ export class UserAvatar extends Component {
                 {this.state.status &&
                 <div id="settings-menu">
                     <ul>
-                        <a><li id='menu-settings' onClick={this.togglePasswordForm}><span>⚙️</span> Change password</li></a>
+                        <a><li id='menu-settings' onClick={this.togglePasswordForm}> <span>⚙️</span> Change password</li></a>
                         <a><li id='dark-mode' onClick={this.toggleDarkmode}> <span>🌛</span> Blue light filter</li></a>
                         <a><li id='menu-logout' onClick={this.logout}> <span>🗝️</span> Log out</li></a>
                     </ul>
