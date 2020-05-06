@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Restoranu-administravimo-programa/static/css/main.3627852d.chunk.css",
+    "main.css": "/Restoranu-administravimo-programa/static/css/main.8d67d02d.chunk.css",
     "main.js": "/Restoranu-administravimo-programa/static/js/main.08506a84.chunk.js",
     "main.js.map": "/Restoranu-administravimo-programa/static/js/main.08506a84.chunk.js.map",
     "runtime-main.js": "/Restoranu-administravimo-programa/static/js/runtime-main.dffeabd7.js",
@@ -8,15 +8,15 @@
     "static/js/2.d7b8a4a7.chunk.js": "/Restoranu-administravimo-programa/static/js/2.d7b8a4a7.chunk.js",
     "static/js/2.d7b8a4a7.chunk.js.map": "/Restoranu-administravimo-programa/static/js/2.d7b8a4a7.chunk.js.map",
     "index.html": "/Restoranu-administravimo-programa/index.html",
-    "precache-manifest.18e5cab978554c79944f26a739f66095.js": "/Restoranu-administravimo-programa/precache-manifest.18e5cab978554c79944f26a739f66095.js",
+    "precache-manifest.14ef85d5d91811e53bb975e909493239.js": "/Restoranu-administravimo-programa/precache-manifest.14ef85d5d91811e53bb975e909493239.js",
     "service-worker.js": "/Restoranu-administravimo-programa/service-worker.js",
-    "static/css/main.3627852d.chunk.css.map": "/Restoranu-administravimo-programa/static/css/main.3627852d.chunk.css.map",
+    "static/css/main.8d67d02d.chunk.css.map": "/Restoranu-administravimo-programa/static/css/main.8d67d02d.chunk.css.map",
     "static/js/2.d7b8a4a7.chunk.js.LICENSE.txt": "/Restoranu-administravimo-programa/static/js/2.d7b8a4a7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.dffeabd7.js",
     "static/js/2.d7b8a4a7.chunk.js",
-    "static/css/main.3627852d.chunk.css",
+    "static/css/main.8d67d02d.chunk.css",
     "static/js/main.08506a84.chunk.js"
   ]
 }
