@@ -12,6 +12,7 @@
 
 #restaurant-search{
     margin: 10px;
+    display: none;
 }
 
 .restaurant-list li{

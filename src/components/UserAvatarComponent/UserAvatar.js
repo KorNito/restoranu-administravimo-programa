@@ -22,10 +22,10 @@ export class UserAvatar extends Component {
             status: false     
         }
     }
-    myFunction()
-    {
-        document.getElementsByClassName("App").style.color= "red";
-    }
+    // myFunction()
+    // {
+    //     document.getElementsByClassName("App").style.color= "red";
+    // }
 
     componentDidMount(){
         axios({
@@ -72,7 +72,7 @@ export class UserAvatar extends Component {
                 <div id="settings-menu">
                     <ul>
                         <a><li id='menu-settings'><span>⚙️</span> Change password</li></a>
-                        <a><li id='dark-mode' onclick={this.myFunction()}> <span>🌛</span> Dark Mode</li></a>
+                        <a><li id='dark-mode' onClick={this.logout}> <span>🌛</span> Dark Mode</li></a>
                         <a><li id='menu-logout' onClick={this.logout}> <span>🗝️</span> Log out</li></a>
                     </ul>
                 </div>}
