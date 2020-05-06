@@ -40,7 +40,7 @@ export class restaurantList extends Component {
         return (
             <div className="restaurant-list">
             
-            <input type="search" id="restaurant-search" name="restaurant_search" placeholder="Search"/>
+            {/* <input type="search" id="restaurant-search" name="restaurant_search" placeholder="Search"/> */}
               <ul>
               {
                 posts.length ?

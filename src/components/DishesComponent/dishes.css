@@ -89,7 +89,7 @@
 .input-container{
 	position:absolute;
     margin-bottom:25px;
-    margin-left: 55px;
+    margin-left: 45px;
     
 }
 #label{
@@ -129,7 +129,7 @@
 	padding:10px 20px;
 	text-transform:uppercase;
     margin-top:20px;
-    margin-left: 75px;
+    margin-left: 84px;
 	border-radius:2px;
 	cursor:pointer;
 	position:relative;
