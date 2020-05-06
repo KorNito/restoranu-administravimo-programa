@@ -8,10 +8,14 @@
 
 
 .MainWelcome{
+    position: relative;
+    z-index: 999;
     font-size: 1.125rem;
 }
 
 .AdminPanel{
+    position: relative;
+    z-index: 999;
     font-family: "Nunito Sans",sans-serif;
     font-size: .875rem;
     font-weight: 400;

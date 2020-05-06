@@ -11,10 +11,14 @@
     /* width: 285px; */
 }
 #discount-applicator-title{
+    position: relative;
+    z-index: 999;
     margin-bottom: 12px;
 }
 
 #discount-amount, #dish-name{
+    position: relative;
+    z-index: 999;
     border: 1px solid #e3eaef;
     color: #1b1d1f;
     background-color: #fff;
@@ -29,6 +33,8 @@
 }
 
 #submitDiscountButton{
+    position: relative;
+    z-index: 999;
 	cursor:pointer;
     border-style: none;
     color: #fff;
