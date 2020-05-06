@@ -1,6 +1,6 @@
 #username{
     position: absolute;
-    z-index: 999;
+    z-index: 997;
     float: right;
     top: 20px;
     right: 100px;
@@ -48,6 +48,7 @@
 #settings-menu{
     background-color: #ffffff;
     position: absolute;
+    z-index: 1001;
     top: 100px;
     right: 10px;
     padding: 20px 0px 20px 0px;

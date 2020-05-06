@@ -6,7 +6,7 @@
 
 #restaurant-logo{
     position: relative;
-    z-index: 999;
+    z-index: 998;
     height: auto;
     width: 100px;
 }

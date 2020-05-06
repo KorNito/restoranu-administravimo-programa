@@ -30,8 +30,6 @@
 
 
 @media screen and (max-width: 845px) {
-
-
     .restaurant-list{
         grid-row: 3; 
         grid-column: 1 / 4;
@@ -54,9 +52,13 @@
     }
   }
 
+  @media screen and (max-width: 715px) {
+    #change-password-form{
+        top: 33%;
+    }
+  }
+
   @media screen and (max-width: 450) {
-
-
     .dishes-component{
         margin: none;
     }
