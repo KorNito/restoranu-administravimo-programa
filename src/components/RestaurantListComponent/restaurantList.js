@@ -16,7 +16,6 @@ export class restaurantList extends Component {
     }
     
     componentDidMount(){
-      
       axios({
         url: 'https://protected-brook-06093.herokuapp.com/addresses',
         method: 'get',
@@ -27,7 +26,6 @@ export class restaurantList extends Component {
         }  
       })
         .then(response => {
-          console.log(response)
           this.setState({posts: response.data})
         }) 
         .catch(error => {
@@ -39,7 +37,6 @@ export class restaurantList extends Component {
         const {posts} = this.state
         return (
             <div className="restaurant-list">
-            
             {/* <input type="search" id="restaurant-search" name="restaurant_search" placeholder="Search"/> */}
               <ul>
               {

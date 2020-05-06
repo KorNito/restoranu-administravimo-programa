@@ -27,7 +27,6 @@ export class RestaurantLogo extends Component {
           }  
         })
           .then(response => {
-            console.log(response)
             this.setState({posts: response.data})
           }) 
           .catch(error => {
