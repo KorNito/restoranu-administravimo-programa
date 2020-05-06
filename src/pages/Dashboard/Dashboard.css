@@ -53,7 +53,7 @@
 
 @media screen and (max-width: 715px) {
     #change-password-form{
-        top: 33%;
+        top: 35%;
     }
 }
 
@@ -70,5 +70,8 @@
     .restaurant-dishes{
         margin-right: 5px;
         margin-left: 5px;
+    }
+    #new-restaurant-form{
+        top: 35%;
     }
 }
