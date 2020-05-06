@@ -50,7 +50,7 @@ export class dishes extends Component {
   .then(response => {
     console.log(response)
     axios({
-      url: 'https://protected-brook-06093.herokuapp.com/getChainDishes',
+      url: 'https://protected-brook-06093.herokuapp.com/menu',
       method: 'get',
       headers: {
         'Authorization': `Bearer ` + jwt,
@@ -74,7 +74,7 @@ export class dishes extends Component {
 
 componentDidMount(){
   axios({
-    url: 'https://protected-brook-06093.herokuapp.com/getChainDishes',
+    url: 'https://protected-brook-06093.herokuapp.com/menu',
     method: 'get',
     headers: {
       'Authorization': `Bearer ` + jwt,
