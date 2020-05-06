@@ -24,9 +24,6 @@ export class discountApplicator extends Component {
 
     submitHandler = (e) => { 
         e.preventDefault()
-        console.log(this.state.price)
-        console.log(this.state.name)
-        console.log('nuskaite duomenis');
         axios({
             method: 'patch',
             url:'https://protected-brook-06093.herokuapp.com/changePrice',
@@ -42,7 +39,6 @@ export class discountApplicator extends Component {
         })
         .then(response => {
             console.log(response)
-            console.log('issiunte duomenis')  
         })
         .catch(error => {
             console.log(error)

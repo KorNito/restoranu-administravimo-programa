@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-// Components
 import Header from '../../components/HeaderComponent/header';
 import WelcomeText from '../../components/WelcomeComponent/WelcomeText'
 import RestaurantList from '../../components/RestaurantListComponent/restaurantList'
@@ -19,7 +18,6 @@ export class Dashboard extends Component {
                 <WelcomeText class='WelcomeText'/>
                 <RestaurantList class='RestaurantListClass'/>
                 {/* <Graph class='GraphClass'/> */}
-                
                 <Dishes class='DishesClass'/>
                 <DiscountApplicator class='DiscountApplicatorClass'/>
                 <Footer class='FooterClass'/> 

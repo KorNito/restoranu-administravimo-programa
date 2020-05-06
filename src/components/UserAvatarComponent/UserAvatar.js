@@ -1,14 +1,9 @@
 import React, { Component } from 'react'
 
-import LoginPage from '../../pages/LoginPage/LoginPage'
-import App from '../../App'
-
 import axios from 'axios'
 
 import './UserAvatar.css';
 import '../../App.css';
-
-import { BrowserRouter, Switch, Route, Router} from 'react-router-dom';
 
 const jwt = localStorage.getItem('jwt');
 
@@ -42,9 +37,7 @@ export class UserAvatar extends Component {
           }  
         })
           .then(response => {
-            console.log(response)
             this.setState({posts: response.data})
-            console.log('duomenys issiusti')
           }) 
           .catch(error => {
             console.log(error);
@@ -69,7 +62,6 @@ export class UserAvatar extends Component {
       })
   }
 
-
     logout = () => {
         localStorage.clear();
         window.location.href = "http://localhost:3000/";
@@ -77,9 +69,6 @@ export class UserAvatar extends Component {
 
     submitPasswordChange = (e) => {
         e.preventDefault()
-        console.log(this.state.oldPassword);
-        console.log(this.state.newPassword);
-        console.log('duomenys gauti');
         axios({
             method: 'patch',
             url: 'https://protected-brook-06093.herokuapp.com/changePassword',
@@ -94,8 +83,6 @@ export class UserAvatar extends Component {
             }  
           })
             .then(response => {
-              console.log(response)
-              console.log('duomenys issiusti')
               alert(JSON.stringify(response.data))
             }) 
             .catch(error => {
@@ -106,7 +93,6 @@ export class UserAvatar extends Component {
               } else {
                 alert(error)
               }
-              
             });
     }
 
@@ -125,7 +111,7 @@ export class UserAvatar extends Component {
                 {this.state.status &&
                 <div id="settings-menu">
                     <ul>
-                        <a><li id='menu-settings' onClick={this.togglePasswordForm}><span>⚙️</span> Change password</li></a>
+                        <a><li id='menu-settings' onClick={this.togglePasswordForm}> <span>⚙️</span> Change password</li></a>
                         <a><li id='dark-mode' onClick={this.toggleDarkmode}> <span>🌛</span> Blue light filter</li></a>
                         <a><li id='menu-logout' onClick={this.logout}> <span>🗝️</span> Log out</li></a>
                     </ul>

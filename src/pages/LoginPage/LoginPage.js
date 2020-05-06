@@ -1,9 +1,5 @@
 import React, { Component } from 'react'
 
-import {Dashboard} from '../Dashboard/Dashboard'
-
-import { BrowserRouter, Switch, Route} from 'react-router-dom';
-
 import './LoginPage.css'
 
 import axios from 'axios'
@@ -22,15 +18,7 @@ export class LoginPage extends Component {
         this.setState({ 
             [e.target.name]: e.target.value 
         })
-    } 
-
-    // setAuthorizationToken(token){
-    //     if(token){
-    //         axios.defaults.headers.common['Authorization'] = `Bearer ${token}`; 
-    //     } else {
-    //         delete axios.defaults.headers.common['Authorization'];
-    //     }
-    // }
+    }
 
     submitHandler = (e) => { 
         e.preventDefault()
@@ -60,9 +48,7 @@ export class LoginPage extends Component {
     render() {
         const {username, password} = this.state
         return (
-            
             <div>
-
                 <div className="bg"></div>
                 <form id='login-form' method='post' onSubmit={this.submitHandler}>
                     <input className="username" type="text" name="username" placeholder="Username" required value={username} onChange={this.changeHandler}/>

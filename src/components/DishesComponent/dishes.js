@@ -18,25 +18,20 @@ export class dishes extends Component {
         img_url: undefined,
         ingridients: undefined,     
     }
-}
+  }
 
-toggle = () => {
-  this.setState({
-      status: !this.state.status
-  })
-}
+  toggle = () => {
+    this.setState({
+        status: !this.state.status
+    })
+  }
 
-changeHandler = (e) => {
-  this.setState({ [e.target.name]: e.target.value })
-}
+  changeHandler = (e) => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
 
-submitHandler = (e) => {
+  submitHandler = (e) => {
   e.preventDefault()
-  console.log(this.state.name)
-  console.log(this.state.price)
-  console.log(this.state.img_url)
-  console.log(this.state.ingridients)
-  console.log('displayed data')
   axios({
     method: 'put',
     url:'https://protected-brook-06093.herokuapp.com/addDish',
@@ -54,7 +49,6 @@ submitHandler = (e) => {
   })
   .then(response => {
     console.log(response)
-    console.log('issiusti duomenys')
     axios({
       url: 'https://protected-brook-06093.herokuapp.com/getChainDishes',
       method: 'get',
@@ -72,7 +66,6 @@ submitHandler = (e) => {
       .catch(error => {
         console.log(error);
       });
-    console.log('duomenys atnaujinti')
   })
   .catch(error => {
     console.log(error)
@@ -87,11 +80,9 @@ componentDidMount(){
       'Authorization': `Bearer ` + jwt,
       'Content-Type': 'application/json',
       'Access-Control-Allow-Origin': '*',
-      // 'RestaurantAddress': 'Kalvariju g. 55'
     }  
   })
     .then(response => {
-      console.log(response)
       this.setState({posts: response.data})
     }) 
     .catch(error => {
@@ -105,15 +96,6 @@ componentDidMount(){
         return (
           <div className="dishes-component">
             <div className="Dishes">
-              {/* <input id="dishes-input" type="text" placeholder="Dishes"/>
-              <div className="dropdown">
-                <input id="dishes-input2" type="text" placeholder="Ingridients"/>
-                <div id="myDropdown" className="dropdown-content">
-                <a href="#Chicken">Chicken</a>
-                <a href="#Beef">Beef</a>
-                <a href="#Pork">Pork</a>
-              </div>
-              </div> */}
               <img className="input-dishes-photo" src='https://freesvg.org/img/mono-tab-new.png' alt="Add Dishes" onClick={this.toggle}/>
               {this.state.status &&
                 <div> 
