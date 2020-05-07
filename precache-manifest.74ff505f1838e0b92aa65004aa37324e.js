@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "1d66df55a463a90096762df4aaa01ae2",
+    "revision": "40e599a4399c1df743766063d0122f24",
     "url": "/Restoranu-administravimo-programa/index.html"
   },
   {
-    "revision": "e03c3fc7a630dd6ac72f",
-    "url": "/Restoranu-administravimo-programa/static/css/main.8d67d02d.chunk.css"
+    "revision": "34ada01b18ca5ad85bd5",
+    "url": "/Restoranu-administravimo-programa/static/css/main.33fc7845.chunk.css"
   },
   {
     "revision": "77b5819a34776654035a",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Restoranu-administravimo-programa/static/js/2.d7b8a4a7.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e03c3fc7a630dd6ac72f",
-    "url": "/Restoranu-administravimo-programa/static/js/main.08506a84.chunk.js"
+    "revision": "34ada01b18ca5ad85bd5",
+    "url": "/Restoranu-administravimo-programa/static/js/main.ba5f031e.chunk.js"
   },
   {
     "revision": "83cdbddbc32783ff52c6",
