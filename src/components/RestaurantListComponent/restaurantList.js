@@ -7,25 +7,25 @@ import './restaurantList.css'
 const jwt = localStorage.getItem('jwt');
 
 export class restaurantList extends Component {
-    constructor(props) {
-        super(props)
+  constructor(props) {
+    super(props)
     
-        this.state = {
-            posts: [],
-            status: false,
-            restaurantAddress: undefined,     
-        }
-    }
+    this.state = {
+      posts: [],
+      status: false,
+      restaurantAddress: undefined,     
+      }
+  }
 
-    toggle = () => {
-      this.setState({
-          status: !this.state.status
-      })
-    }
+  toggle = () => {
+    this.setState({
+      status: !this.state.status
+    })
+  }
 
-    changeHandler = (e) => {
-      this.setState({ [e.target.name]: e.target.value })
-    }
+  changeHandler = (e) => {
+    this.setState({ [e.target.name]: e.target.value })
+  }
   
     submitHandler = (e) => {
     e.preventDefault()
@@ -87,7 +87,6 @@ export class restaurantList extends Component {
         const {restaurantAddress} = this.state
         return (
             <div className="restaurant-list">
-            {/* <input type="search" id="restaurant-search" name="restaurant_search" placeholder="Search"/> */}
             <img className="input-restaurant-photo" src='https://freesvg.org/img/mono-tab-new.png' alt="Add Restaurant" onClick={this.toggle}/> 
             {this.state.status &&
                 <div>

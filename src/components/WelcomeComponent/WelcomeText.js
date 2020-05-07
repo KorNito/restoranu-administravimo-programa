@@ -3,12 +3,12 @@ import React, { Component } from 'react';
 import './WelcomeText.css';
 
 class Welcome extends Component {
-    constructor(props) {
-      super(props)
+  constructor(props) {
+    super(props)
   
-      this.state = {
-          posts: [] 
-      }
+    this.state = {
+      posts: [] 
+    }
   }
  
     render() {

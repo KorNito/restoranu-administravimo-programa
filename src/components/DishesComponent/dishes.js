@@ -65,28 +65,28 @@ export class dishes extends Component {
         console.log(error);
       });
   })
-  .catch(error => {
-    console.log(error)
-  })
-}
-
-componentDidMount(){
-  axios({
-    url: 'https://protected-brook-06093.herokuapp.com/menu',
-    method: 'get',
-    headers: {
-      'Authorization': `Bearer ` + jwt,
-      'Content-Type': 'application/json',
-      'Access-Control-Allow-Origin': '*',
-    }  
-  })
-    .then(response => {
-      this.setState({posts: response.data})
-    }) 
     .catch(error => {
-      console.log(error);
-    });
-}
+      console.log(error)
+    })
+  }
+
+  componentDidMount(){
+    axios({
+      url: 'https://protected-brook-06093.herokuapp.com/menu',
+      method: 'get',
+      headers: {
+        'Authorization': `Bearer ` + jwt,
+        'Content-Type': 'application/json',
+        'Access-Control-Allow-Origin': '*',
+      }  
+    })
+      .then(response => {
+        this.setState({posts: response.data})
+      }) 
+      .catch(error => {
+        console.log(error);
+      });
+  }
 
     render() {
       const {posts} = this.state
