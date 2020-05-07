@@ -45,12 +45,12 @@ export class LoginPage extends Component {
         return (
             <div>
                 <div className="bg"></div>
-                <form id='login-form' method='post' onSubmit={this.submitHandler}>
-                    <input className="username" type="text" name="username" placeholder="Username" required value={username} onChange={this.changeHandler}/>
-                    <input className="password" type="password" name="password" placeholder="Password" required value={password} onChange={this.changeHandler}/>
-                    <button className="Login" type='submit'>Login</button>
-                    <label className='form-switch'><span>| Forgot password</span></label>
-                </form>
+                    <form id='login-form' method='post' onSubmit={this.submitHandler}>
+                        <input className="username" type="text" name="username" placeholder="Username" required value={username} onChange={this.changeHandler}/>
+                        <input className="password" type="password" name="password" placeholder="Password" required value={password} onChange={this.changeHandler}/>
+                        <button className="login" type='submit'>Login</button>
+                        <label className='form-switch'><span>| Forgot password</span></label>
+                    </form>
             </div>
         )
     }
