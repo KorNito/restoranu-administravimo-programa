@@ -14,11 +14,12 @@ class Welcome extends Component {
     render() {
       return (
         <div className="WelcomeText">
-            <h2 className="MainWelcome">Hi, Welcome Back!</h2>
-            <h2 className="AdminPanel">Your restaurant admin panel</h2>
+          <h2 className="MainWelcome">Hi, Welcome Back!</h2>
+          <h2 className="AdminPanel">Your restaurant admin panel</h2>
         </div>
       )
     }
   }
   
   export default Welcome;
+  
